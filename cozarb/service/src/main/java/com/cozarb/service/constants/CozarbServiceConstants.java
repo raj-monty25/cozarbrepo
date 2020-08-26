@@ -1,0 +1,20 @@
+package com.cozarb.service.constants;
+
+public interface CozarbServiceConstants {
+	String GLOBAL_SYSTEM_USER = "system";
+
+	String STATUS_SYSTEM_USER_REGISTERED = "REG";
+	String STATUS_SYSTEM_USER_ACTIVATED = "ACT";
+	String STATUS_SYSTEM_USER_LOCKED = "LOC";
+	String STATUS_SYSTEM_USER_DISABLED = "DIS";
+
+	int REGISTRATION_VERIFY_STATUS_MOBILE_ONLY_VERIFIED = 1;
+	int REGISTRATION_VERIFY_STATUS_EMAIL_ONLY_VERIFIED = 2;
+	int REGISTRATION_VERIFY_STATUS_ALL = 0;
+
+	String ROLE_CUSTOMER = "CUST";
+
+	String EMAIL_TEMPLATE_VERIFY_EMAIL = "verify-email-address.vm";
+	String TEXT_TEMPLATE_VERIFY_MOBILE_NUMBER = "verify-mobile-number.vm";
+
+}

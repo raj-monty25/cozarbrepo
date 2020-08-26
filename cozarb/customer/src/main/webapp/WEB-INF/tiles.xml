@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="fullpage-layout"
+		template="/WEB-INF/template/fullpage-content-template.jsp">
+		<put-attribute name="global-search"
+			value="/WEB-INF/common/global-search.jsp" />
+		<put-attribute name="cart-icon"
+			value="/WEB-INF/common/header-middle-cart-nav.jsp" />
+		<put-attribute name="header-bottom"
+			value="/WEB-INF/common/header-bottom.jsp" />
+		<put-attribute name="news-letter"
+			value="/WEB-INF/common/news-letter.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/common/footer.jsp" />
+	</definition>
+	<definition
+		name="fullpage-layout-with-no-header-and-newsletter"
+		template="/WEB-INF/template/fullpage-content-template.jsp">
+		<put-attribute name="global-search"
+			value="/WEB-INF/common/blank.jsp" />
+		<put-attribute name="cart-icon"
+			value="/WEB-INF/common/blank.jsp" />
+		<put-attribute name="header-bottom"
+			value="/WEB-INF/common/blank.jsp" />
+		<put-attribute name="news-letter"
+			value="/WEB-INF/common/blank.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/common/footer.jsp" />
+	</definition>
+	<definition name="cozarb-customer-home"
+		extends="fullpage-layout">
+		<put-attribute name="title"
+			value="Cozarb Nearby Fashion" />
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp" />
+	</definition>
+	<definition name="product-details" extends="fullpage-layout">
+		<put-attribute name="title" value="Product Information" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/product-details.jsp" />
+	</definition>
+	<definition name="index" extends="fullpage-layout">
+		<put-attribute name="title" value="Index" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/index.jsp" />
+	</definition>
+	<definition name="customer-registration"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title"
+			value="Customer Registration" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/customer-registration.jsp" />
+	</definition>
+	<definition name="customer-registration-confirm"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title"
+			value="Customer Registration" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/customer-registration-confirm.jsp" />
+	</definition>
+	<definition name="email-verified"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title"
+			value="Verified Email Address" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/email-verified.jsp" />
+	</definition>
+	<definition name="account-activated"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title" value="Customer Activated" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/account-activated.jsp" />
+	</definition>
+	<definition name="customer-login"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title" value="Customer Login" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/customer-login.jsp" />
+	</definition>
+	<definition name="global-error"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title" value="Error" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/global-error.jsp" />
+	</definition>
+	<definition name="verify-mobile-number"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title" value="Mobile Verification" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/verify-mobile-number.jsp" />
+	</definition>
+	<definition name="mobile-verified"
+		extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title"
+			value="Mobile Verification Completed" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/mobile-verified.jsp" />
+	</definition>
+	<definition name="cart" extends="fullpage-layout">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="body" value="/WEB-INF/jsp/cart.jsp" />
+	</definition>
+	<definition name="checkout" extends="fullpage-layout">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/checkout.jsp" />
+	</definition>
+	<definition name="order-overview" extends="fullpage-layout">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/order-overview.jsp" />
+	</definition>
+	<definition name="payment" extends="fullpage-layout">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/payment.jsp" />
+	</definition>
+	<definition name="redirect-paytm" extends="fullpage-layout-with-no-header-and-newsletter">
+		<put-attribute name="title" value="Redirect" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/redirect-paytm.jsp" />
+	</definition>
+	<definition name="order-complete" extends="fullpage-layout">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/order-complete.jsp" />
+	</definition>
+
+</tiles-definitions>
+
+
+
+
+
+
+

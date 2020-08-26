@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    jndi-name: java:jboss/datasources/cozarbDataSource
+  jta:
+    enabled: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: sforce4567@gmail.com
+    password: welcome@1
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+velocity:
+  resource:
+    loader:
+      type: file
+      class: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+      path: d:\mail-templates\
+      cache: false
+site:
+  customer:
+    host: http://www.cozarb.com
+  auto:
+    email: no-reply@cozarb.com
+messaging:
+  text:
+    provider:
+      url: https://api.textlocal.in/send/
+      api-key: sj5rBD1Uz6k-Pf0U0S5tbMvVkOnA66UzocgDpcBP9t
+      test: true
+      sender: TXTLCL  
